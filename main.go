@@ -34,7 +34,6 @@ func Main(s []string, w io.Writer) {
 	vars = make(map[string]interface{})
 	line = 1
 
-outer:
 	for {
 		fmt.Fprintln(log, "ReadByte")
 		c, err := b.ReadByte()
@@ -86,7 +85,7 @@ outer:
 				Value: toToken[:len(toToken)-1],
 			})
 
-			continue outer
+			continue
 		case ' ', '\t', '\n':
 			fmt.Fprintln(log, "Case space, \\n or \\t")
 
@@ -108,7 +107,7 @@ outer:
 				col = 0
 			}
 
-			continue outer
+			continue
 		}
 
 		fmt.Fprintf(log, "Append %s to cur\n", string(c))
