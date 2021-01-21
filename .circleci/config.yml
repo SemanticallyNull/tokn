@@ -1,12 +1,9 @@
 version: 2.1
 
-orbs:
-  golangci-lint: timakin/golangci-lint@0.1.1
-
 jobs:
   test:
     docker:
-      - image: circleci/golang:1.13
+      - image: cimg/go:1.15
 
     steps:
       - checkout
