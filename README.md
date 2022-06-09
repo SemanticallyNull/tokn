@@ -1,4 +1,4 @@
-~Please don't use this as an example of anything~
+*Please don't use this as an example of anything*
 
 # Tokn
 
