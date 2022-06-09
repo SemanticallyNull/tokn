@@ -1,3 +1,5 @@
+~Please don't use this as an example of anything~
+
 # Tokn
 
 A toy programming language. A very not-serious project. Implemented in ~3 hours.
